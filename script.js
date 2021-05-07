@@ -34,13 +34,12 @@ const writePassword = () => {
     console.log(passwordCharacters);
     return passwordCharacters;
     // getPassword();
-  }
-    var passwordCharacters = "";
+  
     for (let i = 0; i < passwordLength; i++) {
       var character = passwordCharacters[Math.floor(Math.random() * passwordLength)]
       passwordCharacters.concat(writePassword);
     }
-
+  }
 
 
 
@@ -69,7 +68,6 @@ const generatePassword = () => {
     var specialCharacters = confirm("Would you like to include special characters?");
     var numbers = confirm("Would you like to include numbers?");
   } 
-  
   // If user cancels out of all options this alert will generate
   if (
     !lowerCase &&
@@ -87,7 +85,6 @@ const generatePassword = () => {
 function getPassword (passwordCharacters) {
   console.log(passwordCharacters);
 for (var i = 0; i <= passwordLength; i++) {
-
   newPassword += passwordCharacters.forEach(Math.floor(Math.random() * Math.floor(value.length -1)));
   return newPassword;
   }
