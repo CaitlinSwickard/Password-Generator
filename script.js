@@ -8,20 +8,19 @@ var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var specialCharacters = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 var numbers = '0123456789';
 // Empty variable for characters
-var passwordCharacters = "";
+// var passwordCharacters = "";
 
 
 
 // Write password to the #password input
-function writePassword() {
+const writePassword = () => {
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
+  // adding character selection to passwordCharacters variable
   if (lowerCase) {
     passwordCharacters = passwordCharacters.concat(lowerCase)
-    console.log(passwordCharacters);
     }
     if (upperCase) {
     passwordCharacters = passwordCharacters.concat(upperCase);
@@ -33,9 +32,17 @@ function writePassword() {
     passwordCharacters = passwordCharacters.concat(numbers);
     }
     console.log(passwordCharacters);
-    // return passwordCharacters;
-    getPassword();
-}
+    return passwordCharacters;
+    // getPassword();
+  }
+    var passwordCharacters = "";
+    for (let i = 0; i < passwordLength; i++) {
+      var character = passwordCharacters[Math.floor(Math.random() * passwordLength)]
+      passwordCharacters.concat(writePassword);
+    }
+
+
+
 
 
 
@@ -50,9 +57,6 @@ generateBtn.addEventListener("click", writePassword);
 const generatePassword = () => {
   var newPassword = "";
 
-
-
-
   var passwordLength = prompt('How many characters would you like to include in the password?');
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8 and 128 characters");
@@ -66,7 +70,7 @@ const generatePassword = () => {
     var numbers = confirm("Would you like to include numbers?");
   } 
   
-  // why can this not be an else if statement???
+  // If user cancels out of all options this alert will generate
   if (
     !lowerCase &&
     !upperCase &&
@@ -74,13 +78,10 @@ const generatePassword = () => {
     !numbers) {
       alert("You must select some characters!");
       return (generatePassword());
-    };
+    }
 }  
 
   
-
-
-
 
 // create for loop to choose password characters
 function getPassword (passwordCharacters) {
@@ -91,8 +92,8 @@ for (var i = 0; i <= passwordLength; i++) {
   return newPassword;
   }
 }
-// add password to display area
 
+// add password to display area
 // document.getElementById("#password").value = newPassword;
 // console.log(password);
 
