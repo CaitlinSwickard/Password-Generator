@@ -8,7 +8,7 @@ var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var specialCharacters = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 var numbers = '0123456789';
 // Empty variable for characters
-// var passwordCharacters = "";
+var passwordCharacters = "";
 
 
 
@@ -33,14 +33,15 @@ const writePassword = () => {
     }
     console.log(passwordCharacters);
     return passwordCharacters;
-    // getPassword();
-  
-    for (let i = 0; i < passwordLength; i++) {
-      var character = passwordCharacters[Math.floor(Math.random() * passwordLength)]
-      passwordCharacters.concat(writePassword);
-    }
+   
+    
+    // for (let i = 0; i < passwordCharacters; i++) {
+    //   [Math.floor(Math.random() * passwordLength)]
+    //   passwordCharacters.concat(writePassword);
+    //   console.log(writePassword);
+    // }
   }
-
+ 
 
 
 
@@ -53,13 +54,13 @@ generateBtn.addEventListener("click", writePassword);
 
 
 // Asking for the length of password
-const generatePassword = () => {
+let generatePassword = () => {
   var newPassword = "";
 
   var passwordLength = prompt('How many characters would you like to include in the password?');
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8 and 128 characters");
-    return (generatePassword());
+    return;
 
     // Asking for characters to use in password
   } else if (passwordLength >= 8 && passwordLength <= 128) {
@@ -82,21 +83,26 @@ const generatePassword = () => {
   
 
 // create for loop to choose password characters
+
+for (let i = 0; i < passwordCharacters; i++) {
+  [Math.floor(Math.random() * passwordLength)]
+  passwordCharacters.concat(writePassword);
+  console.log(writePassword);
+}
+
+
 function getPassword (passwordCharacters) {
   console.log(passwordCharacters);
 for (var i = 0; i <= passwordLength; i++) {
   newPassword += passwordCharacters.forEach(Math.floor(Math.random() * Math.floor(value.length -1)));
   return newPassword;
   }
+
 }
 
 // add password to display area
-// document.getElementById("#password").value = newPassword;
-// console.log(password);
+document.getElementById("#password").value = newPassword;
+console.log(password);
 
 
 
-
-
-
-// // writePassword();
