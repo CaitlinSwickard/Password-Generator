@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of the project description
+This project creates a random generated password for a user. The user is prompted to make a selection of a password length. The length must be between 8 and 128 characters. If the user selects anything more or less they are alerted to meet the criteria. Once they have picked a length they are then asked if they would like to include lower case characters, upper case characters, special characters or numbers. Once the user has decided what they would like to include in their password a randomly generated password will appear for them in the Generate a Password box.
 
 [View GitHub repo here!](https://github.com/CaitlinSwickard/Password-Generator-Challenge)
 [View deployed page here!](https://caitlinswickard.github.io/Password-Generator-Challenge/)
@@ -33,3 +33,4 @@ One Paragraph of the project description
 
 ![Screen shot-1](images/shot1.png)
 ![Screen shot-2](images/shot2.png)
+![Screen shot-3](images/shot3.png)

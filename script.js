@@ -66,7 +66,7 @@ function generatePassword() {
   }
   console.log(passwordCharacters);
 
-
+  // looping though selected characters for new password and length
   for (var i = 0; i < passwordLength; i++) {
     newPassword += passwordCharacters.charAt(Math.floor(Math.random() * passwordCharacters.length));
   }
