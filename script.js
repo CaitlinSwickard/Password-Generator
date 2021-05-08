@@ -81,15 +81,13 @@ function generatePassword (passwordLength) {
 
 
 
-
-
-// function getPassword (passwordCharacters) {
-//   console.log(passwordCharacters);
+function getPassword (passwordCharacters) {
+  console.log(passwordCharacters);
 for (var i = 0; i <= passwordLength; i++) {
   newPassword += passwordCharacters.charAt(Math.floor(Math.random() * Math.floor(value.length -1)));
   // return newPassword;
   }
-
+}
 
 
 
