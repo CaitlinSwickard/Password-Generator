@@ -137,19 +137,19 @@ function generatePassword() {
   // adding character selection to passwordCharacters variable
   if (lCase) {
     passwordCharacters = passwordCharacters + lowerCase;
-    newPassword += (lowerCase);
+    newPassword += lowerCase;
   }
   if (upCase) {
     passwordCharacters = passwordCharacters + upperCase;
-    newPassword += (upperCase);
+    newPassword += upperCase;
   }
   if (spCharacters) {
     passwordCharacters = passwordCharacters + specialCharacters;
-    newPassword += (specialCharacters);
+    newPassword += specialCharacters;
   }
   if (nums) {
     passwordCharacters = passwordCharacters + numbers;
-    newPassword += (numbers);
+    newPassword += numbers;
   }
   console.log(passwordCharacters);
 
