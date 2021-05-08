@@ -5,7 +5,7 @@ This project creates a random generated password for a user. The user is prompte
 [View GitHub repo here!](https://github.com/CaitlinSwickard/Password-Generator-Challenge)
 [View deployed page here!](https://caitlinswickard.github.io/Password-Generator-Challenge/)
 
-### Prerequisites
+### Criteria
 
 - GIVEN I need a new, secure password
 - WHEN I click the button to generate a password
