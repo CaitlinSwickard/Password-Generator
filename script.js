@@ -23,7 +23,6 @@ const writePassword = () => {
 generateBtn.addEventListener("click", writePassword);
 
 
-
 // Asking for the length of password
 function generatePassword() {
   // Empty string for new generated password
@@ -41,16 +40,6 @@ function generatePassword() {
     var nums = confirm("Would you like to include numbers?");
   }
 
-  // If user cancels out of all options this alert will generate
-  if (
-    !lCase &&
-    !upCase &&
-    !spCharacters &&
-    !nums) {
-    alert("You must select some characters!");
-    return (generatePassword());
-  }
-
   // adding character selection to passwordCharacters variable
   if (lCase) {
     passwordCharacters = passwordCharacters + lowerCase;
@@ -65,6 +54,12 @@ function generatePassword() {
     passwordCharacters = passwordCharacters + numbers;
   }
   console.log(passwordCharacters);
+
+  // If user cancels out of all options this alert will generate
+  if (passwordCharacters === "") {
+    alert("You must select some characters!");
+    return (generatePassword());
+  }
 
   // looping though selected characters for new password and length
   for (var i = 0; i < passwordLength; i++) {
