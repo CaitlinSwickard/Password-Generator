@@ -30,6 +30,6 @@ This project creates a random generated password for a user. The user is prompte
 
 ## Screen Shots
 
-![Screen shot-1](images/shot-1.png)
-![Screen shot-2](images/shot-2.png)
-![Screen shot-3](images/shot-3.png)
+![Screen shot-1](images/Shot-1.png)
+![Screen shot-2](images/Shot-2.png)
+![Screen shot-3](images/Shot-3.png)
